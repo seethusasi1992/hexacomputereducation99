@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet"/>
+<link href="mystyle.css" rel="stylesheet"/>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+<title>Untitled Document</title>
+
+</head>
+
+<body onload = "loadMap()">
+
+
+
+
+<section class="banner-area inner-page-banner" id="home">
+	<div class="overlay overlay-bg"></div>
+</section>
+
+<div class="container">
+	<div class="logo" style="margin-top:10px">
+    	<span style="color:#FFFFFF; font-size:30px">HE</span><span style="color:#009966; font-size:30px">XA<br/></span>
+        <span style="color:#FFFFFF; font-size:11px">COMPUTER EDUCATION</span>
+	</div>
+	<div class="menu_bar clear" style="top:35px">
+    	<ul class="menu_list">
+        	<li><a href="index.html">HOME</a></li>
+			<li><a href="other-services.html">FEE PAYMENT</a></li>
+			<li><a href="other-services.html">EXAM REGISTRATION</a></li>
+			<li><a href="#">REGISTER</a>
+            	<ul class="sub_menu" style="margin-left: -5px">
+                	<li><a href="cdit-registration.html">C-dit</a></li>
+                    <li><a href="tally-courses.html">Hexa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">COURSES</a>
+            	<ul class="sub_menu">
+                	<li><a href="cdit-courses.html">C-dit Courses</a></li>
+                    <li><a href="tally-courses.html">C-dit tally Courses</a></li>
+                    <li><a href="other-courses.html">Other Courses</a></li>
+                    <li><a href="shortterm-courses.html">Short Term Courses</a></li>
+                </ul>
+            </li>
+		
+            <li><a href="other-services.html">OUR SERVICES</a></li>
+        </ul>
+	</div>
+
+	<hr class="ruler-hr">
+
+
+</div>
+
+<!--  -------------------------------------------- -->
+	<br/>
+	<br/>
+
+
+<!--     --------------------------- C-DIT Registration ------------------------------- -->
+
+<div class="container" id="cdit-course">
+	<h2>C-DIT Registration</h2>
+    <div class="details-panel-left" style="background-color:#F1F1F1">
+		<table width="200" class="tab">
+  		<tbody>
+			<tr>
+      		<td>Date</td>
+      		<td><input type="text" name="todaydate"/></td>
+    	</tr>
+    	<tr>
+      		<td>Course Applied for</td>
+      		<td><input type="radio" name="coursetype" value="cdit"/>C-DIT
+			<input type="radio" name="coursetype" value="hexa"/>HEXA
+			</td>
+    	</tr>
+    	<tr>
+      		<td>Name</td>
+      		<td><input type="text" name="student-name"/></td>
+    	</tr>
+    	<tr>
+      		<td>Father's/Mother's/Guardian's Name<br/>(Tick whichever is applicable)</td>
+      		<td><input type="text" name="guardian-name"/></td>
+    	</tr>
+    	<tr>
+     		<td valign="top">Address for Correspondence</td>
+      		<td><textarea name="address"></textarea></td>
+    	</tr>
+    	<tr>
+      		<td>Phone/Mobile No</td>
+      		<td><input type="text" name="phone-no"/></td>
+    	</tr>
+    	<tr>
+      		<td>Date of Birth</td>
+      		<td></td>
+    	</tr>
+    	<tr>
+     		<td>Nationality</td>
+      		<td><input type="text" name="nationality"/></td>
+    	</tr>
+  		</tbody>
+		</table>
+	</div>
+	<!------------------------------------------------------- -->
+	<div class="details-panel-left" style="margin-left: 100px;background-color:#F1F1F1">
+		<table width="200" class="tab">
+  		<tbody>
+  			    <tr>
+      <td>Category</td>
+      <td><input type="radio" name="category" value="SC"/>SC
+		<input type="radio" name="category" value="ST"/>ST
+		  <input type="radio" name="category" value="OBC"/>OBC
+		  <input type="radio" name="category" value="General"/>General
+		</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td><input type="radio" name="sex" value="male"/>Male
+		<input type="radio" name="sex" value="female"/>Female
+		</td>
+    </tr>
+    <tr>
+      <td valign="top">Qualification Details</td>
+      <td><textarea name="qualification"></textarea></td>
+    </tr>
+    <tr>
+      <td>Course Duration</td>
+      <td><select name="course-duration">
+		  	<option selected>--Select--</option>
+		  	<option>Daily</option>
+		  	<option>Saturdays</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td>Alotted Time</td>
+      <td><input type="text" name="alotted-time"/></td>
+    </tr>
+	<tr>
+      <td colspan="2">Course Fee Details</td>
+    </tr>
+	<tr>
+      <td>Payment Type</td>
+      <td><select name="payment-type">
+		  	<option selected>--Select--</option>
+		  	<option>Full Payment</option>
+		  	<option>Monthly</option>
+		  </select></td>
+    </tr>
+	<tr>
+      <td>Course Fee</td>
+      <td><input type="text" name="course-fee"/></td>
+    </tr>
+	<tr>
+      <td>Admission Fee</td>
+      <td><input type="text" name="admission-fee"/></td>
+    </tr>
+	<tr>
+		<td colspan="2" align="right"><input type="submit" value="REGISTER" class="tab-btn"/></td>
+	</tr>
+
+  	</tbody>
+	</table>
+
+	</div>
+
+
+   <div class="clear"></div>
+   
+</div>
+
+
+
+<!-- ------------------------------------------------------ -->
+<div class="clear"></div>
+<br/>
+
+
+
+
+ 
+
+
+</body>
+</html>
